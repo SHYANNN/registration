@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    background:hsl(0, 100%, 74%) url(./images/bg-intro-desktop.png);
+}
+.container{
+    margin-top: 100px;
+    width: 80%;
+    margin: 100px auto 0;
+}
+.section{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.learn{
+    margin-top: 8em;
+}
+.title{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.content{
+    max-width: 520px;
+    margin-top: 20px;
+    color: #fff;
+    line-height: 1.8;
+}
+.form-container{
+    margin-left: 2em;
+}
+.try{
+    border: none;
+    padding: .9em .6em;
+    text-align: center;
+    border-radius: 8px;
+    background-color: hsl(248, 32%,49%);
+    font-weight: 600;
+    color:hsl(246, 25%, 77%) ;
+    box-shadow:5px 5px 3px rgba(0,0,0,.1);
+    margin-bottom: 1em;
+}
+.try span{
+    color: #fff;
+}
+.form{
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 6px;
+}
+.info input{
+    width: 100%;
+    padding: 1.3em;
+    outline: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+button{
+    width: 100%;
+    padding: 1.2em;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-weight: 600;
+}
+.tiny{
+    font-size: .6rem;
+    margin-top: .7em;
+    color: hsl(246, 25%, 77%);
+}
+.tiny a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+/* Media Queries */
+
+@media(max-width:916px){
+    .container{
+        width: 85%;
+        justify-content: space-between;
+    }
+
+}
+@media(max-width:875px){
+    .container{
+        width: 90%;
+    }
+}
+@media(max-width:816px){
+    .container{
+        width: 95%;
+    }
+}
+@media(max-width:770px){
+    .title{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:681px){
+    .section{
+        flex-direction: column;
+    }
+    .container{
+        margin-top: 0px;
+        width: 89%;
+    }
+    .learn{
+        margin-top: 3em;
+        text-align: center;
+    }
+    .content{
+        max-width: 680px;
+        margin-bottom: 40px;
+    }
+    .form-container{
+        margin-left: 0;
+    }
+}
+@media(max-width:399px){
+    .title{
+        font-size: 1.1rem;
+    }
+}
